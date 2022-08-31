@@ -66,6 +66,9 @@ function mainMenu(person, people) {
         case "info":
             //! TODO #1: Utilize the displayPerson function //////////////////////////////////////////
             // HINT: Look for a person-object stringifier utility function to help
+
+            /**Not sure why the displayPerson and personInfo are showing as 'Undefined' */
+
             let personInfo = displayPerson(person[0]);
             alert(personInfo);
             break;
