@@ -234,10 +234,17 @@ function familySearch(person, people) {
             parentsNames += "\n" + parent.firstName + " " + parent.lastName
         }
     }
-    
+
+    let siblings = [] 
+    /**Need to create a siblingsNames variable */
+  
+
     }
 
     console.log(`
     Spouse: ${spouseName}
+    Parents: ${parentsNames}
+    Siblings: ${siblingsNames}
+
     `)
 }
