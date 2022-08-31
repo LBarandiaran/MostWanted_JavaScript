@@ -205,3 +205,39 @@ function searchByTrait(people) {
     return foundTrait;
 }
 
+function searchByID(id,people) {
+
+    return people.find(function (value) {
+        return value.id === id;
+    })
+}
+
+function familySearch(person, people) {
+    let spouseName = person.currentSpouse
+    if (spouseName === undefined) {
+        spouseName = "No Spouse Found"
+    }
+    else {spouseName = person.currentSpouse}
+
+    let parents = []
+    if (person.parents.length >0) {
+        for (let id of person.parents) {
+            parents.push(searchByID(id,people))
+        }
+    }
+    let parentsNames = "";
+
+    if (parents,length === 0) {
+        parentsNames = "None Found"
+    } else {
+        for (let parent of parents){
+            parentsNames += "\n" + parent.firstName + " " + parent.lastName
+        }
+    }
+    
+    }
+
+    console.log(`
+    Spouse: ${spouseName}
+    `)
+}
