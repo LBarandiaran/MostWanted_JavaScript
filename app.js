@@ -190,3 +190,18 @@ function chars(input) {
 
 //////////////////////////////////////////* End Of Starter Code *//////////////////////////////////////////
 // Any additional functions can be written below this line 👇. Happy Coding! 😁
+
+function searchByTrait(people) {
+    let firstTrait = promptFor("What trait are you looking for?", chars);
+
+    let foundTrait = people.filter(function (person) {
+        if (person.firstTrait === firstTrait) {
+            /** I know this will not work as I need to point firstTrait to specific columns i.e. person.eyeColor,
+             * but I'm not sure now to get the trait variable looking across all columns (dob,weight, etc.)
+             */
+            return true;
+        }
+    });
+    return foundTrait;
+}
+
