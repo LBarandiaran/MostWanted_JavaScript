@@ -239,12 +239,11 @@ function familySearch(person, people) {
     /**Need to create a siblingsNames variable */
   
 
-    }
+
 
     console.log(`
     Spouse: ${spouseName}
     Parents: ${parentsNames}
-    Siblings: ${siblingsNames}
+    Siblings: ${siblingsNames}`)
 
-    `)
 }
