@@ -67,7 +67,9 @@ function mainMenu(person, people) {
             //! TODO #1: Utilize the displayPerson function //////////////////////////////////////////
             // HINT: Look for a person-object stringifier utility function to help
 
-            /**Not sure why the displayPerson and personInfo are showing as 'Undefined' */
+            /**Not sure why the displayPerson and personInfo are showing as 'Undefined' 
+             * I did find some stuff on JSON.stringify() but not sure how to incorporate
+            */
 
             let personInfo = displayPerson(person[0]);
             alert(personInfo);
